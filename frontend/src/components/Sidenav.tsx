@@ -1,4 +1,4 @@
-// import { ReactComponent as DashIcon } from "../assets/Icons/DashIcon.svg";
+import { ReactComponent as DashIcon } from "../assets/Icons/DashIcon.svg";
 
 const Sidenav = () => {
   return (
@@ -6,7 +6,7 @@ const Sidenav = () => {
       <div className="flex flex-col justify-between h-[25%]">
         <h1>CommonCents</h1>
         <div className="flex flex-col gap-2">
-          {/* <DashIcon /> */}
+          <DashIcon />
           <p>Hello</p>
           <p>Bye</p>
           <p>Die</p>
