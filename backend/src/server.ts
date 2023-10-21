@@ -1,6 +1,8 @@
-import { PORT } from "./env.js"
-import ExpressConfig from "./Express/express.config.js"
+import { PORT } from "./env.js";
+import ExpressConfig from "./appConfig.js";
 
-const app = ExpressConfig()
+const app = ExpressConfig();
 
-app.listen(PORT, () => console.log("Server Running on http://localhost:" + PORT))
+app.listen(PORT, () =>
+  console.log("Server Running on http://localhost:" + PORT)
+);
