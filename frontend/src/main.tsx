@@ -2,29 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Expenses from "./pages/Expenses";
-import Uploader from "./pages/Uploader";
 import Root from "./pages/Root";
+import { NAV_ITEMS } from "./constants/navItems";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children: [
-      {
-        path: "",
-        element: <Dashboard />,
-      },
-      {
-        path: "expenses",
-        element: <Expenses />,
-      },
-      {
-        path: "uploader",
-        element: <Uploader />,
-      },
-    ],
+    children: NAV_ITEMS.map(({path, element}) => ({
+      path,
+      element
+    }))
   },
 ]);
 
