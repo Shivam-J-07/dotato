@@ -9,10 +9,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children: NAV_ITEMS.map(({path, element}) => ({
+    children: NAV_ITEMS.map(({ path, element }) => ({
       path,
-      element
-    }))
+      element,
+    })),
   },
 ]);
 
